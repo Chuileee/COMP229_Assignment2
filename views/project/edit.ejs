@@ -1,0 +1,29 @@
+<%- include ../partials/header.ejs %>
+<%- include ../partials/top_nav.ejs %>
+
+<main class="container">
+    <form class="form" method="POST">
+        <div class="form-group">
+          <label for="pname">Project Title:</label>
+          <input type="text" class="form-control" id="pname" name="pname" value="<%= project.name %>">
+        </div>
+
+        <div class="form-group">
+            <label for="pdescription">Project Description</label>
+            <input type="text" class="form-control" id="pdescription" name="pdescription" value="<%= project.description %>">
+        </div>
+        <div class="form-group">
+            <label for="pdeadline">Project Deadline:</label>
+            <input type="date" class="form-control" id="pdeadline" name="pdeadline" value="<%= project.deadline %>">
+        </div>
+        <div class="form-group">
+          <input type="checkbox" class="form-check-input" id="loanApplied" name="loanApplied" <%= project.loanApplied ? 'checked' : '' %>>
+          <label for="loanApplied">Apply for a Loan</label>
+      </div>
+        <br>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+</main>
+
+<%- include ../partials/bottom_nav.ejs %>  
+<%- include ../partials/footer.ejs %>

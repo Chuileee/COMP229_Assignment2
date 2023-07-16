@@ -1,0 +1,52 @@
+<%- include partials/header.ejs %>
+<%- include partials/top_nav.ejs %>
+
+<main class="container">
+    <h1>My Projects</h1>
+
+    <!-- Project 1 -->
+    <div class="project">
+        <h2>Project 1: Photo Viewer</h2>
+        <p>This project entailed modifying an existing application to add more user-friendly features and enhance the user interface. The project is built using Node.js and Express.</p>
+        <img src="/images/project1_screenshot.jpg" alt="Project 1 Screenshot">
+        <p>Key features include:</p>
+        <ul>
+            <li>Adding a picture to a favorite area.</li>
+            <li>Limiting favorites to a maximum of 5.</li>
+            <li>Option to remove favorites.</li>
+        </ul>
+        <a href="https://github.com/Chuileee/express-generator-app/tree/master/project/project1" class="project-link">View Project 1</a>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project">
+        <h2>Project 2: Bug Smasher Game</h2>
+        <p>This project involved implementing a simple browser-based game. The game features a bug hopping randomly around the game area. The player tries to catch the bug by clicking on it. This project is built using HTML5 and JavaScript.</p>
+        <img src="/images/project2_screenshot.jpg" alt="Project 2 Screenshot">
+        <p>Key features include:</p>
+        <ul>
+            <li>Increasing score when the bug is smashed.</li>
+            <li>Decreasing the hopping interval when the bug is smashed.</li>
+            <li>Option to reset the game speed.</li>
+        </ul>
+        <a href="https://github.com/Chuileee/express-generator-app/tree/master/project/project2" class="project-link">View Project 2</a>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project">
+        <h2>Project 3: Image Gallery</h2>
+        <p>This project involved implementing a simple Image gallery using Ajax and jQuery. It displays pictures specified in a file, with user navigation controls. This project is built using jQuery and AJAX for seamless user experience.</p>
+        <img src="/images/project3_screenshot.jpg" alt="Project 3 Screenshot">
+        <p>Key features include:</p>
+        <ul>
+            <li>Previous and Next navigation buttons.</li>
+            <li>Update button to reload the picture list from the file.</li>
+            <li>Smooth transitions between pictures using jQuery animations.</li>
+        </ul>
+        <a href="https://github.com/Chuileee/express-generator-app/tree/master/project/project3" class="project-link">View Project 3</a>
+    </div>
+    
+</main>
+
+<%- include partials/bottom_nav.ejs %>
+<%- include partials/footer.ejs %>
