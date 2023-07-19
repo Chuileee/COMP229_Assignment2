@@ -31,9 +31,7 @@ router.get('/service', function(req, res, next) {
   res.render('service', { title: 'Service' });
 });
 
-router.get('/student', function(req, res, next) {
-  res.render('student', { title: 'Student' });
-});
+
 
 
 module.exports = router;
