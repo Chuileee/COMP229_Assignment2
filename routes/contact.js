@@ -17,12 +17,12 @@ router.get('/', (req, res, next) => {
     });
 });
 
-// to open add student page
+// to open add contact page
 router.get('/add', (req, res, next) => {
     res.render('contact/add', {title: 'Add Contact'})
 });
 
-// insert student data into mongoDB collection
+// insert contact data into mongoDB collection
 router.post('/add', (req, res, next) => {
     //getting data from form
     let newContact = Contact({

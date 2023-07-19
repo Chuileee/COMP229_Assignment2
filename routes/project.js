@@ -18,12 +18,12 @@ router.get('/', (req, res, next) => {
     });
 });
 
-// to open add student page
+// to open add project page
 router.get('/add', (req, res, next) => {
     res.render('project/add', {title: 'Add Project'})
 });
 
-// insert student data into mongoDB collection
+// insert project data into mongoDB collection
 router.post('/add', (req, res, next) => {
     //getting data from form
     let newProject = Project({

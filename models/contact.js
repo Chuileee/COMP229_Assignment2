@@ -1,6 +1,6 @@
 let mongoose = require('mongoose');
 
-//Create Model of Student
+//Create Model of Contact
 let contactModel = mongoose.Schema(
     {
         "fname" : String,
